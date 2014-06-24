@@ -34,7 +34,22 @@ var sun = function(word){
 }
 
 console.log(sun("yeah sun"));
-console.log(sun("abadasun"));
-
+console.log(sun("catapult"));
 console.log(sun("sun"));
-console.log(sun("Sun"));
+
+/* 9. tiny  */
+var tiny = function(x){
+	return 0<x && x<1;
+}
+
+console.log(tiny(0.3));
+
+
+/* 10. getSeconds  */
+var getSeconds = function(x){
+	var time = x.split(":");
+
+	return +time[0]*60 + (+time[1]); 
+}
+
+console.log(getSeconds("10:30"));
